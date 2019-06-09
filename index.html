@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Desktop</title>
+</head>
+
+<body oncontextmenu="return false;">
+    <div class="desktop">
+
+        <ul class="menu hidden">
+            <li id="changeBg">
+                <a href="javascript:void(0)">Change Background</a>
+
+                <input type="file" class="file hidden">
+            </li>
+            <li id="changeBgSize">
+                <a href="" id="changeSize">Change Size</a>
+
+                <ul class="submenu hidden">
+                    <li id="bgSizeCover"><a>Cover</a></li>
+                    <li id="bgSizeContain"><a>Contain</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="mywindow hidden" id="originalWindow" >
+            <div class="title-bar clear-fix" id="originalWindowBar">
+                <div class="title float-left">New Window</div>
+                <div class="control-buttons float-right">
+                    <i class="fas fa-window-minimize"></i>
+                    <i class="fas fa-window-maximize"></i>
+                    <i class="fas fa-window-restore"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="content">
+
+            </div>
+        </div>
+
+        <a href="javascript:void(0)" id="addWindow">Create New Window</a>
+
+    </div>
+    <script src="iQuery.js"></script>
+    <script src="windows.js"></script>
+
+    <script src="desktop.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
